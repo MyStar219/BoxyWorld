@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="KGk-i7-Jjw" customClass="addfundsCell1">
+            <rect key="frame" x="0.0" y="0.0" width="275" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="275" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9Q-1S-ooe">
+                        <rect key="frame" x="62" y="28" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Type:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC0-NO-Cwd">
+                        <rect key="frame" x="62" y="28" width="72" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="HQS-mv-axo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cct-bM-VKY">
+                        <rect key="frame" x="243" y="23" width="10" height="10"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="R7h-62-hLF"/>
+                        </constraints>
+                        <connections>
+                            <action selector="selectBtnTab:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Y9T-Ut-Box"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ggdsgsgsdgds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9m-LL-hva">
+                        <rect key="frame" x="132" y="28" width="96" height="17"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96" id="u5v-rP-a7Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dp9-GD-rlU">
+                        <rect key="frame" x="8" y="13" width="54" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="AO0-ql-nrb"/>
+                            <constraint firstAttribute="height" constant="39" id="rDl-9P-mcc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O9Q-1S-ooe" firstAttribute="leading" secondItem="dp9-GD-rlU" secondAttribute="trailing" id="8zQ-1u-cME"/>
+                    <constraint firstItem="dp9-GD-rlU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Fji-bh-jm3"/>
+                    <constraint firstItem="HC0-NO-Cwd" firstAttribute="leading" secondItem="dp9-GD-rlU" secondAttribute="trailing" id="SEJ-TN-4Bz"/>
+                    <constraint firstItem="dp9-GD-rlU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="T33-u3-UBo"/>
+                    <constraint firstItem="cct-bM-VKY" firstAttribute="leading" secondItem="f9m-LL-hva" secondAttribute="trailing" constant="15" id="V7g-Jt-kwF"/>
+                    <constraint firstItem="HC0-NO-Cwd" firstAttribute="centerY" secondItem="f9m-LL-hva" secondAttribute="centerY" id="Vxf-Zy-8aY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cct-bM-VKY" secondAttribute="trailing" constant="14" id="XTg-91-lKk"/>
+                    <constraint firstItem="f9m-LL-hva" firstAttribute="leading" secondItem="HC0-NO-Cwd" secondAttribute="trailing" constant="-2" id="aV5-ww-a4f"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cct-bM-VKY" secondAttribute="bottom" constant="24" id="am7-Yt-zoD"/>
+                    <constraint firstItem="dp9-GD-rlU" firstAttribute="top" secondItem="cct-bM-VKY" secondAttribute="top" constant="-10" id="d0q-2b-Riz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HC0-NO-Cwd" secondAttribute="bottom" constant="11.5" id="gab-FS-9Eu"/>
+                    <constraint firstItem="HC0-NO-Cwd" firstAttribute="top" secondItem="O9Q-1S-ooe" secondAttribute="bottom" id="vxG-wp-ZDp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardImg" destination="dp9-GD-rlU" id="E0E-EA-6VD"/>
+                <outlet property="cardNoLbl" destination="O9Q-1S-ooe" id="9ku-Cc-L1P"/>
+                <outlet property="cardTypeLbl" destination="f9m-LL-hva" id="UPQ-10-p6X"/>
+                <outlet property="cardtypeTitle" destination="HC0-NO-Cwd" id="C7w-MP-65Y"/>
+                <outlet property="selectBtn" destination="cct-bM-VKY" id="8hK-g0-Qax"/>
+            </connections>
+            <point key="canvasLocation" x="-1.5" y="114.5"/>
+        </tableViewCell>
+    </objects>
+</document>

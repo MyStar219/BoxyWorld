@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="headerViewId" id="iN0-l3-epB" customClass="headerview">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <userGuides>
+                <userLayoutGuide location="30" affinity="minY"/>
+                <userLayoutGuide location="140" affinity="minY"/>
+                <userLayoutGuide location="190" affinity="minY"/>
+            </userGuides>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobileBg" translatesAutoresizingMaskIntoConstraints="NO" id="7pA-FW-ZMW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Nf1-dW-Q6P">
+                    <rect key="frame" x="137" y="31" width="100" height="100"/>
+                    <color key="backgroundColor" red="1" green="0.364323495" blue="0.35324888809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="TuI-gr-8PI"/>
+                        <constraint firstAttribute="height" constant="100" id="VKj-o3-jtc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chig'z Rathod" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTc-JW-iwY">
+                    <rect key="frame" x="22" y="140" width="330" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="bYV-t3-riV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="$3800.00 USD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVc-s6-fIa">
+                    <rect key="frame" x="200" y="190" width="152" height="48"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash Balance:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-Ho-haB">
+                    <rect key="frame" x="68" y="203" width="124" height="22"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7pA-FW-ZMW" secondAttribute="trailing" id="6g7-0p-AUq"/>
+                <constraint firstItem="7pA-FW-ZMW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bd8-IA-9ZP"/>
+                <constraint firstAttribute="bottom" secondItem="VVc-s6-fIa" secondAttribute="bottom" constant="20" id="H7p-Ji-qfz"/>
+                <constraint firstItem="Nf1-dW-Q6P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="137" id="J72-lc-KBK"/>
+                <constraint firstAttribute="trailing" secondItem="ZTc-JW-iwY" secondAttribute="trailing" constant="23" id="K0R-gp-oSY"/>
+                <constraint firstItem="yfZ-Ho-haB" firstAttribute="top" secondItem="ZTc-JW-iwY" secondAttribute="bottom" constant="22" id="OOh-tl-THo"/>
+                <constraint firstItem="yfZ-Ho-haB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="68" id="Oti-An-PtR"/>
+                <constraint firstItem="ZTc-JW-iwY" firstAttribute="top" secondItem="Nf1-dW-Q6P" secondAttribute="bottom" constant="9" id="QIw-6E-8vp"/>
+                <constraint firstItem="VVc-s6-fIa" firstAttribute="leading" secondItem="yfZ-Ho-haB" secondAttribute="trailing" constant="8" id="Txe-C7-68N"/>
+                <constraint firstItem="ZTc-JW-iwY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="aXT-1W-M5F"/>
+                <constraint firstAttribute="trailing" secondItem="VVc-s6-fIa" secondAttribute="trailing" constant="23" id="dIR-eD-FWh"/>
+                <constraint firstItem="VVc-s6-fIa" firstAttribute="top" secondItem="ZTc-JW-iwY" secondAttribute="bottom" constant="9" id="dRh-K2-9ak"/>
+                <constraint firstAttribute="bottom" secondItem="yfZ-Ho-haB" secondAttribute="bottom" constant="33" id="jK1-uQ-4mg"/>
+                <constraint firstItem="ZTc-JW-iwY" firstAttribute="trailing" secondItem="VVc-s6-fIa" secondAttribute="trailing" id="lzb-7x-uRR"/>
+                <constraint firstItem="7pA-FW-ZMW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tPW-Tf-FpQ"/>
+                <constraint firstAttribute="bottom" secondItem="7pA-FW-ZMW" secondAttribute="bottom" id="tSE-aK-rbu"/>
+                <constraint firstItem="Nf1-dW-Q6P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="31" id="zmm-xN-mhd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="nameLbl" destination="ZTc-JW-iwY" id="vME-ht-cPP"/>
+                <outlet property="priceLbl" destination="yfZ-Ho-haB" id="pD2-bs-fw9"/>
+                <outlet property="priceTxt" destination="VVc-s6-fIa" id="SuP-HT-YP4"/>
+                <outlet property="profileImage" destination="Nf1-dW-Q6P" id="AiD-lC-fzJ"/>
+            </connections>
+            <point key="canvasLocation" x="-392" y="-102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mobileBg" width="720" height="1280"/>
+        <image name="userIcon" width="70" height="70"/>
+    </resources>
+</document>
